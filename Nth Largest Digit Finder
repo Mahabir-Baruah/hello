@@ -1,0 +1,12 @@
+
+n = input("Enter number: ")
+k = int(input("Enter nth value: "))
+
+digits = []
+
+for ch in n:
+    digits.append(int(ch))
+
+digits.sort(reverse=True)
+
+print(k, "th Largest Digit =", digits[k - 1])
