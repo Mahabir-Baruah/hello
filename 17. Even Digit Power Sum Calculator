@@ -1,0 +1,12 @@
+
+n = input("Enter number: ")
+power = len(n)
+s = 0
+
+for ch in n:
+    digit = int(ch)
+
+    if digit % 2 == 0:
+        s += digit ** power
+
+print("Even Digit Power Sum =", s)
