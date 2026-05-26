@@ -1,0 +1,10 @@
+n = input("Enter number: ")
+largest = 0
+
+for ch in n:
+    digit = int(ch)
+
+    if digit > largest:
+        largest = digit
+
+print("Largest Digit =", largest)
