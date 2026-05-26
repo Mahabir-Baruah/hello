@@ -1,0 +1,10 @@
+
+n = input("Enter number: ")
+power = len(n)
+s = 0
+
+for ch in n:
+    digit = int(ch)
+    s += digit ** power
+
+print("Power Sum =", s)
