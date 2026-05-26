@@ -1,0 +1,14 @@
+n = int(input("Enter number: "))
+
+a = 0
+b = 1
+
+while a < n:
+    c = a + b
+    a = b
+    b = c
+
+if a == n:
+    print("Yes, Fibonacci Number")
+else:
+    print("No, Not Fibonacci")
