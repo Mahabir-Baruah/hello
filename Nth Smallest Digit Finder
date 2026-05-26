@@ -1,0 +1,11 @@
+n = input("Enter number: ")
+k = int(input("Enter nth value: "))
+
+digits = []
+
+for ch in n:
+    digits.append(int(ch))
+
+digits.sort()
+
+print(k, "th Smallest Digit =", digits[k - 1])
