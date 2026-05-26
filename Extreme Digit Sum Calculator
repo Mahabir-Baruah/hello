@@ -1,0 +1,8 @@
+n = input("Enter number: ")
+
+digits = []
+
+for ch in n:
+    digits.append(int(ch))
+
+print("Extreme Sum =", min(digits) + max(digits))
