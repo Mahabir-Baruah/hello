@@ -1,0 +1,16 @@
+# 1. Prime Sum Calculator
+m = int(input("Enter m: "))
+n = int(input("Enter n: "))
+s = 0
+
+for num in range(m, n + 1):
+    if num > 1:
+        prime = True
+        for i in range(2, num):
+            if num % i == 0:
+                prime = False
+                break
+        if prime:
+            s += num
+
+print("Prime Sum =", s)
